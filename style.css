@@ -1,0 +1,1574 @@
+@font-face {
+    font-family: 'CeraProBlack';
+    src: url("./fonts/CeraPro-Black.ttf");
+}
+@font-face {
+    font-family: 'CeraProBold';
+    src: url("./fonts/CeraPro-Bold.ttf");
+}
+@font-face {
+    font-family: 'CeraProLight';
+    src: url("./fonts/CeraPro-Light.ttf");
+}
+@font-face {
+    font-family: 'CeraProMedium';
+    src: url("./fonts/CeraPro-Medium.ttf");
+}
+@font-face {
+    font-family: 'CeraProRegular';
+    src: url("./fonts/CeraPro-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'CeraProLight';
+}
+.cpbl{
+    font-family: 'CeraProBlack';
+}
+.cpbo{
+    font-family: 'CeraProBold';
+}
+.cpl{
+    font-family: 'CeraProLight';
+}
+.cpm{
+    font-family: 'CeraProMedium';
+}
+.cpr{
+    font-family: 'CeraProRegular';
+}
+.display-fl-jus-b-al-c-w{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+header,main,footer,.w-100{
+    width: 100%;
+}
+header{
+    width: 100%;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/headerBg.jpg') no-repeat;
+    background-size: cover;
+}
+.cont-of-header{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+}
+.first-chapter-header{
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+.logo-div{
+    width: 150px;
+}
+.white{
+    color: #fff;
+}
+.black{
+    color: #000;
+}
+.logo-p{
+    font-size: 12px;
+    margin-left: 15px;
+    color: #c1c1c1;
+}
+.first-tel-href-hedaer>a,.second-tel-div-header>a,.third-div-hedaer>div>a{
+    text-decoration: none;
+}
+.first-tel-href-hedaer>i,.third-div-hedaer>div>i{
+    font-size: 25px;
+}
+.first-tel-href-hedaer>i{
+    margin-right: 10px;
+}
+.third-div-hedaer>div>a{
+    margin: 0px 10px;
+}
+.ul-in-header{
+    list-style: none;
+}
+.ul-div-in-heder{
+    margin: 30px;
+}
+.li-in-header{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.li-in-header::before{
+    position: absolute;
+    content: '';
+    left: -34;
+    top: 10px;
+    width: 20px;
+    height: 1px;
+    background: #43aacf;
+}
+.slide-div-heder{
+    width: 40%;
+    height: 67px;
+    background: url("https://www.optim.pro/local/templates/optimpro_new/images/antonDesc.png") no-repeat 0 40px;
+    background-position-y: 35px;
+    background-size: cover;
+    text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
+    color: #000;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 70px;
+}
+.slide-div-heder>p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.border-bottom-under-slide-div{
+    width: 150px;
+    border: 1px solid #c1c1c1;
+}
+.static-cont{
+    width: 40%;
+    font-family: 'CeraProMedium';
+    color: #cbcbcb;
+    font-size: 28px;
+}
+.static-div{
+    margin-top: 25px;
+}
+.plane-div{
+    position: absolute;
+    right: 70px;
+    top: 100;
+    z-index: 1;
+}
+.arrow-div{
+    position: absolute;
+    right: 40px;
+    top: 120px;
+    z-index: 0;
+}
+.header-fixed-div{
+    background: #1F1F1F;
+    position: relative;
+    z-index: 5;
+}
+.content-of-fixed{
+    width: 1040px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.ul-in-fixed{
+    list-style: none;
+}
+.ul-in-fixed>li>a{
+    text-decoration: none;
+    color: #c1c1c1;
+}
+.for-after-in-header-li{
+    position: relative;
+}
+.for-after-in-header-li::after{
+    position: absolute;
+    content: '|||';
+    right: -45px;
+    color: #c1c1c1;
+}
+.cont-of-first{
+    width: 1140px;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+.cornerInner{
+    padding: 30px;
+    position: relative;
+}
+.cornerInner::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom: 4px solid #000;
+    border-left: 4px solid #000;
+    bottom: 0;
+    left: 0
+}
+.cornerInner::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
+    bottom: 0;
+    right: 0;
+}
+.for-after-before-corner-first::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 4px solid #000;
+    border-right: 4px solid #000;
+    top: 0;
+    right: 0;
+}
+.for-after-before-corner-first::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 4px solid #000;
+    border-left: 4px solid #000;
+    top: 0;
+    left: 0;
+}
+.second-p-in-corner,.third-p-in-corner{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    color: #8c8f8e;
+}
+.for-after-before-corner-first{
+    width: 35%;
+    position: relative;
+}
+.second-in-first{
+    width: 60%;
+}
+.first-p-in-second{
+    padding: 0 0px 5px;
+    position: relative;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+.first-p-in-second::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 60px;
+    height: 5px;
+    background: #3d9ac5;
+}
+.big-pin-second-of-first{
+    font-size: 30px;
+    margin: 10px 40px 10px;
+}
+.plane-div-in-second-first{
+    width: 100px;
+    height: 100px;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/aboutVideoBg.png') no-repeat;
+    background-size: cover;
+    background-position: -40px 20px;
+    background-color: #3d9ac5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.play-div{
+    font-size: 35px;
+}
+.name-of-video{
+    font-weight: bold;
+    font-size: 20px;
+}
+.a-in-btn{
+    text-decoration: none;
+    position: relative;
+    transition: 0.2s;
+    width: 250px;
+    height: 66px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.span-in-btn{
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    color: #1f1f1f;
+    width: 250px;
+    height: 66px;
+    position: relative;
+    z-index: 2;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+.a-in-btn::before{
+    content: '';
+    border-radius: 50px;
+    border: 2px solid #3d9ac5;
+    height: 66px;
+    width: 250px;
+    position: absolute;
+    transition: 0.2s;
+    margin-right: 20px;
+    left: 5px;
+    top: 7px;
+    z-index: 1;
+}
+.a-in-btn:hover span{
+    background: #fff;
+    color: #000;
+    left: 1px;
+}
+.a-in-btn:hover::before{
+    background: #3d9ac5;
+}
+.w-1140{
+    width: 1140px;
+}
+.cont-of-result-of-company{
+    margin: 40px auto;
+}
+.title-in-result{
+    font-size: 44px;
+    line-height: 46px;
+    color: #363636;
+    text-transform: uppercase;
+}
+.result-big-div{
+    margin: 40px 0;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/resultBg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 704px;
+}
+.resultItem{
+    position: absolute;
+    width: 408px;
+    height: 230px;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/resultItemBg.png') no-repeat center 0;
+}
+.resultItem.item1{
+    left: 20px;
+    top: 50px;
+}
+.item1>.resultTop{
+    margin-left: 270px;
+    margin-top: 20px;
+}
+.item1>.resultDesc,.item2>.resultDesc,
+.item3>.resultDesc,.item4>.resultDesc,
+.item5>.resultDesc{
+    font: 14px;
+    color: #727272;
+    margin-left: 270px;
+}
+.resultItem.item2{
+    right: 20px;
+    top: 50px;
+}
+
+.resultItem.item3{
+    left: calc(50% - 204px);
+    top: calc(50% - 125px);
+}
+.resultItem.item4{
+    left: 20px;
+    bottom: 60px;
+}
+.resultItem.item5{
+    right: 20px;
+    bottom: 60px;
+}
+.resultDesc{
+    white-space: nowrap;
+}
+.resultBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 408px;
+}
+.resultBottomLeft{
+    font-size: 45px;
+}
+.resultBottomright {
+    font: 16px;
+    margin-left: 15px;
+}
+.resultTop{
+    font-family: 'CeraProBlack';
+    font-size: 20px;
+    margin-left: 270px;
+    margin-top: 20px;
+}
+.p-first-title-of-third{
+    padding: 0 0px 5px;
+    position: relative; 
+}
+.cont-third{
+    margin: 20px auto;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    position: relative;
+}
+.cont-third::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 60px;
+    height: 5px;
+    background: #3d9ac5;
+}
+.big-title-third{
+    font-size: 38px;
+    margin-left: 20px;
+    line-height: 46px;
+}
+.w-50{
+    width: 50%;
+}
+.first-block-third{
+    display: block;
+    padding: 35px 0 0 45px;
+    position: relative;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #ebebeb;
+    height: 410px;
+    transition: 0.25s;
+    background:  url('https://www.optim.pro/upload/iblock/00a/00a0329821162ffed67dc822e1ffa0bf.png') no-repeat;
+    background-position: 150% 30%;
+    cursor: pointer;
+}
+.first-block-third:hover::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3d9ac5;
+    top: 20px;
+    left: -20px;
+}
+.first-block-third:hover{
+    outline: 2px solid #3d9ac5;
+    background-position: 140% 20%;
+}
+.p-in-block-third{
+    color: #363636;
+    font-size: 24px;
+    max-width: 300px;
+    padding-top: 30px;
+}
+.block-of-third{
+    margin-top: 30px;
+}
+.inform-btn{
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 6px 25px;
+    border-radius: 100%;
+    display: inline-block;
+    border: 2px solid #3d9ac5;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+.btn-in-block-third{
+    position: relative;
+    cursor: pointer;
+}
+.btn-in-block-third::after{
+    position: absolute;
+    content: '';
+    width: 140px;
+    height: 25px;
+    border-radius: 100%;
+    border: 2px solid #3d9ac5;
+    top: 10px;
+    left: 8px;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+.first-block-third{
+    position: relative;
+}
+.first-block-third:hover{
+    z-index: 3;
+}
+/* .third-block{
+    z-index: 1;
+} */
+.first-block-third:hover>.btn-in-block-third>.inform-btn{
+    background: #3d9ac5;
+    color: #fff;
+}
+.inform-btn>i{
+    transition: 0.2s ease-in;
+}
+.first-block-third:hover>.btn-in-block-third>.inform-btn>i{
+    transform: rotate(90deg);
+}
+.first-block-third:hover>.btn-in-block-third::after{
+    opacity: 1;
+}
+.btn-in-block-third{
+    margin-top: 60px;
+}
+.cont-of-marketing{
+    margin: 50px auto;
+}
+.p-first-title-of-marketing{
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+.p-first-title-of-marketing::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 60px;
+    height: 5px;
+    background: #3d9ac5;
+}
+.big-title-of-marketing{
+    margin-top: 20px;
+    font-size: 42px;
+    margin-left: 0px 0px 10px 5px;
+}
+.marketing-div-img{
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/methodologyBg.jpg') no-repeat center center;
+}
+.marketing-div-img>ul{
+    list-style: none;
+}
+.marketing-div-img>ul>li{
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/methodologyItemBgMin.png') no-repeat 0 0;
+    width: 163px;
+    height: 163px;
+    position: absolute;
+    text-align: center;
+    padding-top: 35px;
+}
+.methodarrow1{
+    position: absolute;
+    bottom: 200px;
+    left: 156px;
+}
+.methodarrow2{
+    position: absolute;
+    bottom: 276px;
+    left: 343px;
+}
+.methodarrow3{
+    position: absolute;
+    left: 440px;
+    top: 137px;
+}
+.methodarrow4{
+    position: absolute;
+    right: 163px;
+    top: 89px;
+}
+.methodarrow5{
+    position: absolute;
+    right: 108px;
+    bottom: 187px;
+}
+.methodarrow6{
+    position: absolute;
+    bottom: 145px;
+    right: 414px;
+}
+.method-item1{
+    left: 22px;
+    top: 427px;
+}
+.method-item2{
+    left: 200px;
+    top: 355px;
+}
+.method-item3{
+    left: 379px;
+    top: 290px;
+}
+.method-item4{
+    left: 585px;
+    top: 50px;
+}
+.method-item5{
+    left: 930px;
+    top: 145px;
+}
+.method-item6{
+    left: 700px;
+    top: 450px;
+}
+.title-of-way{
+    color: #9b9b9b;
+    font-size: 44px;
+    line-height: 46px;
+}
+.cont-of-wayResult{
+    margin: 0 auto;
+}
+.wayResult-block{
+    display: flex;
+}
+.cont-of-way-result{
+    width: 156px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.blockResult{
+    width: 40%;
+    height: 310px;
+    display: block;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/resultBg.png') no-repeat 100% 100%;
+    border-right: 1px solid #ebebeb;
+}
+.p-in-result-way{
+    margin-top: 10px;
+}
+.result-img-in-way-num{
+    position: relative;
+    left: 23px;
+    top: 20px;
+    width: 100%;
+    height: 59px;
+    color: #bfe1f9;
+    font-size: 18px;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/resultNumbers.png') no-repeat;
+}
+.number-result{
+    position: absolute;
+    left: -28px;
+    top: 10px;
+    font-weight: bold;
+}
+.m-auto{
+    margin: 0 auto;
+}
+.our-COMPETENCES{
+    margin-top: 70px;
+}
+.third-p-in-resilt-way{
+    width: 256px;
+    margin-left: -45px;
+}
+.small-title-of-competences{
+    position: relative;
+}
+.small-title-of-competences::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 60px;
+    height: 5px;
+    background: #3d9ac5;
+}
+.big-p-in-competences{
+    margin-left: 15px;
+    font-size: 44px;
+    line-height: 46px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.img-div-of-competences{
+    width: 100%;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/partnersBlockBg.jpg') no-repeat;
+}
+.first-photo-block{
+    display: flex;
+    margin-top: 10px;
+}
+.img-div-of-competences{
+    display: flex;
+    justify-content: flex-end;
+    padding: 82px 0;
+}
+.first-photo-block>div{
+    margin: 10px;
+}
+.cont-of-polilov{
+    background: #0C1317;
+    position: relative;
+    overflow: hidden;
+}
+.second-cont-of-polilov{
+    width: 92%;
+    margin: 0px auto;
+    padding: 50px 0;
+}
+.big-shark{
+    width: 1200px;
+    position: absolute;
+    bottom: -30px;
+    animation: bigArrow infinite 1s;
+}
+.bg-polilov{
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/antonDesc.png') no-repeat;
+    background-size: cover;
+    padding-left: 10px;
+}
+.img-polilov-and-name{
+    width: 345px;
+}
+.paras-in-head-polilov{
+    width: 670px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.p-in-head-polilov{
+    position: relative;
+    width: 201px;
+    height: 110px;
+    color: #8c8f8e;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.p-in-head-polilov::after{
+    content: '';
+    position: absolute;
+    width: 233px;
+    border: 1px solid #8c8f8e;
+    bottom: 18px;
+    left: -15px;
+}
+.year-of-polilov-span{
+    position: relative;
+}
+.year-of-polilov-span::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    border-left: 1px solid #8c8f8e;
+    bottom: 10px;
+    left: -10px;
+}
+.about-polilov-inform{
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    width: 715px;
+    position: relative;
+}
+.about-polilov-inform::before{
+    position: absolute;
+    content: 'Â«';
+    color: #8c8f8e;
+    font-size: 72px;
+    left: -85px;
+    top: -20px;
+    font-weight: normal;
+}
+.border-bottom{
+    width: 100%;
+    border-bottom: 1px solid #8c8f8e;
+    margin-top: 20px;
+}
+.last-p-in-polinov{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #8c8f8e;
+    font-size: 40px;
+}
+.href-in-polinov-p{
+    position: relative;
+    font-size: 20px;
+}
+.href-in-polinov-p::before{
+    position: absolute;
+    content: '';
+    background: url('./photo/arrowrightpolinov.png') no-repeat;
+    background-size: cover;
+    width: 81px;
+    height: 80px;
+    right: -105px;
+    bottom: -35px;
+    animation: arrleft infinite 1.5s;
+}
+@keyframes arrleft{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.polilov-div-a{
+    position: relative;
+    z-index: 3;
+    padding: 20px 25px;
+    border-radius: 100%;
+    color: #fff;
+    border: 2px solid #3d9ac5;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 800;
+}
+.href-div-polilov{
+    position: relative;
+    margin: 50px 0 40px 20px;
+}
+.href-div-polilov:hover>a{
+    background: #3d9ac5;
+}
+.href-div-polilov:hover:before{
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 67px;
+    border: 2px solid #3d9ac5;
+    border-radius: 100%;
+    left: 7px;
+    top: 8px;
+    z-index: 1;
+}
+.three-d-service{
+    margin-top: 80px;
+}
+.tree-d-div{
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/expertiseListBg.jpg') no-repeat;
+    background-size: cover;
+}
+.p-small-in-three-d{
+    position: relative;
+}
+.p-small-in-three-d::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 60px;
+    height: 5px;
+    background: #3d9ac5;
+}
+.big-title-in-tree-d{
+    font-size: 45px;
+    font-weight: bold;
+    color: #8c8f8e;
+    margin-left: 10px;
+}
+.first-tree-d-big-div{
+    padding: 20px;
+    border: 2px solid #fff;
+    width: 500px;
+    transform: perspective(10px) rotatex(-1deg);
+    margin: 25px 87px 0px 65px;
+}
+.second-tree-d-big-div{
+    padding: 20px;
+    border: 2px solid #fff;
+    width: 500px;
+    transform: perspective(10px) rotatex(1deg);
+    margin: -10px 87px 0px 65px;
+    background: rgba(67,170,207,0.1);
+}
+.third-tree-d-big-div{
+    padding: 20px;
+    border: 2px solid #fff;
+    width: 500px;
+    transform: perspective(10px) rotatex(1deg);
+    margin: 45px 87px 30px 65px;
+    background: rgba(67,170,207,0.3);
+}
+.third-p-block-tree-d{
+    margin-top: 55px;
+}
+.animation-div-blocks{
+    padding: 25px;
+    background: #F1F6F9;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.animation-div-blocks>a{
+    text-decoration: none;
+    color: #000;
+}
+.first-p-and-three-d-big-div,.second-p-and-three-d-big-div,
+.third-p-and-three-d-big-div{
+    display: flex;
+    align-items: flex-start;
+}
+.p-before-tree-d-blocks{
+    width: 100px;
+    font-size: 12px;
+    color: #8c8f8e;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 2px;
+}
+.between-p-in-three-d-blocks,.first-title-of-tree-d{
+    color: #363636;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 55px;
+}
+.first-title-of-tree-d{
+    position: relative;
+}
+.first-title-of-tree-d::after{
+    position: absolute;
+    content: '';
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/arrowExpertise.png') no-repeat;
+    background-size: cover;
+    width: 163px;
+    height: 150px;
+    right: -20px;
+    top: -62px;
+}
+.titile-of-second-tree-d{
+    font-size: 18px;
+    color: #363636;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.second-div-about-tree-d{
+    position: relative;
+}
+.second-div-about-tree-d::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-top: 4px solid #000;
+    border-left: 4px solid #000;
+    top: 0px;
+    left: 0px;
+}
+.second-div-about-tree-d::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-top: 4px solid #000;
+    border-right: 4px solid #000;
+    top: 0px;
+    right: 0px;
+}
+.cont-if-second-div-about-tree-d{
+    position: relative;
+    padding: 30px;
+}
+.cont-if-second-div-about-tree-d::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-bottom: 4px solid #000;
+    border-left: 4px solid #000;
+    bottom: 0px;
+    left: 0px;
+}
+.cont-if-second-div-about-tree-d::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
+    bottom: 0px;
+    right: 0px;
+}
+.three-div-and-inform{
+    margin-top: 50px;
+    align-items: flex-start;
+}
+.ul-in-second-tree-d>li{
+    margin: 20px 0 0 30px;
+    font-family: 'CeraProRegular';
+    font-size: 17px;
+    color: #8c8f8e;
+    position: relative;
+    list-style: none;
+    list-style-image: url('https://www.optim.pro/local/templates/optimpro_new/images/methodologyItemNumber.png');
+}
+.btn-in-tree-d{
+    margin-top: 30px;
+}
+.p-in-car-div{
+    font-size: 34px;
+    line-height: 46px;
+    color: #363636;
+    text-transform: uppercase;
+}
+.car-div{
+    margin-top: 50px;
+}
+.car-div-img{
+    width: 100%;
+    background: url('https://www.optim.pro/local/templates/optimpro_new/images/feedBackBlockBg.jpg') no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.p-in-car-div-img{
+    font-size: 40px;
+    margin: 0 100px 0 50px;
+    padding: 55px 200px 80px 30px;
+}
+.href-div-car-img{
+    margin: -30px 0px 0px 75px;
+    display: inline-block;
+}
+.href-div-car-img:hover::before{
+    width: 315px;
+}
+.href-div-car-img,.p-in-car-div-img{
+    position: relative;
+    z-index: 3;
+}
+.big-car-shark{
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    z-index: 0;
+}
+.contacts{
+    margin-top: 50px;
+}
+.contact-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.title-of-adress{
+    color: #8c8f8e;
+    text-transform: uppercase;
+}
+.adress-href{
+    text-decoration: none;
+    font-size: 24px;
+    color: #3a3a3a;
+    border-bottom: 1px solid #3d9ac5;
+    display: inline-block;
+}
+.contact-div>div>div{
+    margin-top: 20px;
+}
+.m-l{
+    display: inline-block;
+    margin-left: 100px;
+}
+.moscow-adress{
+    font-size: 24px;
+    color: #3a3a3a;
+}
+.href-div-in-contact{
+    color: #3d9ac5;
+    text-decoration: none;
+    border-bottom: 1px solid #3d9ac5;
+}
+.spans-our-contact{
+    position: relative;
+    width: 610px;
+}
+.m-l-span{
+    color: #9b9b9b;
+    position: absolute;
+    right: 0px;
+}
+.contact-div{
+    margin: 40px 0px;
+}
+footer{
+    background: #0C1317;
+}
+.cont-of-footer{
+    padding: 20px 0px;
+}
+.footer-logo-p{
+    width: 250px;
+}
+@media (max-width: 1283px) and (min-width: 767px){
+    .logo-p,.li-in-header::before,.plane-div,.arrow-div,.write-div-header,
+    .for-after-in-header-li::after,.time-of-video,.for-after-before-corner-first::before
+    ,.cornerInner::before,.cornerInner::after,.for-after-before-corner-first::after,
+    .third-block,.first-block,.methodarrow1,.methodarrow2,.methodarrow3,.methodarrow4,.methodarrow5,.methodarrow6
+    ,.about-polilov-inform,.our-COMPETENCES,.big-shark,.p-in-head-polilov::after,.year-of-polilov-span::before
+    ,.year-of-polilov-span,.head-of-polilov>.border-bottom,.big-car-shark{
+        display: none;
+    }
+    .paras-in-head-polilov{
+        margin-top: 50px;
+    }
+    .car-div-img>.p-in-car-div-img{
+        font-size: 20px;
+    }
+    .cont-of-footer{
+        width: 90%;
+    }
+    .last-p-in-polinov{
+        font-size: 28px;
+    }
+    .li-in-header{
+       color:  #A7EFFF;
+    }
+    .resultBottom {
+        bottom: 50px;
+    }
+    .slide-div-heder,.result-big-div,.resultItem,.first-block-third{
+        background-image: none;
+    } 
+    .resultBottomLeft{
+        font-size: 20px;
+    }
+    .resultDesc{
+        font-size: 13px;
+    }
+    .slide-div-heder{
+        font-size: 30px;
+        color: #A7EFFF;
+        text-shadow: none;
+    }
+    .content-of-fixed{
+        width: 80%;
+    }
+    .head-of-polilov{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-fixed-div{
+        background: #7BC0DE;
+    }
+    .ul-in-fixed>li>a{
+        color: #fff;
+    }
+    .cont-of-first,.cont-of-wayResult,.cont-of-polilov,.cont-of-tree-d-service
+    ,.cont-of-car-div,.cont-of-contact{
+        width: 100%;
+    }
+    .big-pin-second-of-first {
+        font-size: 25px;
+    }
+    .cont-of-seond-in-first>div,.three-div-and-inform,.contact-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-div-team,.second-div-about-tree-d{
+        margin-top: 70px;
+    }
+    .cornerInner{
+        padding-left: 20px;
+    }
+    .second-p-in-corner,.third-p-in-corner{
+        padding: 0;
+        font-weight: bold;
+    }
+    .cornerInner{
+        border: 2px solid #000;
+        border-radius: 30px;
+    }
+    .first-p-in-inner{
+        font-size: 20px;
+    }
+    .item1>.resultDesc,.item1>.resultTop,.resultTop,
+    .resultBottomright,.item2>.resultDesc,
+    .item3>.resultDesc,.item4>.resultDesc,
+    .item5>.resultDesc
+    {
+        margin-left: 0;
+    }
+    
+    .first-title-of-tree-d::after {
+        transform: rotate(90deg);
+        right: -6px;
+        top: -39px;
+    }
+    .resultBottom{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .result-big-div{
+        width: 100%;
+        margin: 0 auto;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .resultItem.item4{
+        top: 50px;
+        left: -15px;
+    }
+    .resultItem.item5{
+        top: 50px;
+    }
+    .resultItem.item2 {
+        right: 0px;
+    }
+    .big-title-third{
+        font-size: 23px;
+        margin-left: 3px;
+    }
+    .block-of-third{
+        justify-content: center;
+    }
+    .first-block-third{
+        padding: 0;
+    }
+    .cont-third,.cont-of-result-of-company{
+        width: 90%;
+    }
+    .cont-of-marketing{
+        width: 100%;
+    }
+    .method-item1,.method-item2,.method-item3,.method-item4{
+        top: 0;
+    }
+    .method-item6 {
+        left: 18px;
+        top: 184px;
+    }
+    .method-item5 {
+        left: 197px;
+        top: 176px;
+    } 
+     .resultItem.item3 {
+        top: 50px;
+        left: -22px;
+    }
+    .marketing-div-img{
+        background-position: 0 0;
+    }
+    .wayResult-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .blockResult{
+        margin: 20px 0px;
+        box-shadow: 1px 5px 5px 0px;
+    }
+    .resultItem{
+        position: relative;
+        width: 100px;
+    }
+    .resultItem.item3 {
+        top: 50px;
+    }
+    .resultItem.item4 {
+        top: 50px;
+    }
+    .resultItem.item5 {
+        top: 50px;
+    }
+    .resultItem.item1{
+        left: 0px;
+    }
+}
+@media (max-width: 766px) and (min-width: 320px){
+    .logo-p,.li-in-header::before,.plane-div,.arrow-div,.write-div-header,
+    .for-after-in-header-li::after,.time-of-video,.for-after-before-corner-first::before
+    ,.cornerInner::before,.cornerInner::after,.for-after-before-corner-first::after,
+    .third-block,.first-block,.second-div-hedaer,.methodarrow1,.methodarrow2,.methodarrow3,
+    .methodarrow4,.methodarrow5,.methodarrow6
+    ,.about-polilov-inform,.our-COMPETENCES,.big-shark,.p-in-head-polilov::after,
+    .year-of-polilov-span::before
+    ,.year-of-polilov-span,.head-of-polilov>.border-bottom,.big-car-shark,.last-p-in-polinov,.href-in-polinov-p::before,.first-title-of-tree-d::after{
+        display: none;
+    }
+    .for-after-before-corner-first,.second-in-first{
+        width: 95%;
+    }
+    .second-in-first{
+        margin-top: 20px;
+    }
+    .title-of-way {
+        font-size: 30px;
+        line-height: 36px;
+        margin-left: 20px;
+    }
+    .href-div-polilov:hover:before{
+        width: 233px;
+    }
+    .blockResult{
+        width: 80%;
+    }
+    .three-div-and-inform{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-tree-d-big-div,.second-tree-d-big-div,.third-tree-d-big-div{
+        transform: none;
+        width: auto;
+        flex-direction: column;
+    }
+    .polilov-div-a,.big-title-in-tree-d,.car-div-img>.p-in-car-div-img {
+        font-size: 20px;
+    }
+    .last-p-in-polinov {
+        font-size: 28px;
+    }
+    .paras-in-head-polilov{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .second-div-about-tree-d{
+        margin-top: 70px;
+    }
+    .p-in-car-div {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .blockResult{
+        margin: 20px 0px;
+        box-shadow: 1px 5px 5px 0px;
+    }
+    .ul-in-fixed{
+        flex-direction: column;
+    }
+    .li-in-header{
+       color:  #A7EFFF;
+    }
+    .wayResult-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .resultBottom {
+        bottom: 50px;
+    }
+    .slide-div-heder,.result-big-div,.resultItem,.first-block-third{
+        background-image: none;
+    } 
+    .resultBottomLeft{
+        font-size: 20px;
+    }
+    .item1>.resultBottom>.resultBottomLeft{
+        margin-left: 40px;
+    }
+    .item2>.resultBottom>.resultBottomLeft{
+        margin-left: 30px;
+    }
+    .item3>.resultBottom>.resultBottomLeft{
+        margin-left: 40px;
+    }
+    .item4>.resultBottom>.resultBottomLeft{
+        margin-left: 50px;
+    }
+    .item5>.resultBottom>.resultBottomLeft{
+        margin-left: 30px;
+    }
+    .resultItem.item2{
+        width: 115px;
+        margin: 0 auto;
+    }
+    .resultDesc{
+        font-size: 13px;
+    }
+    .slide-div-heder{
+        font-size: 30px;
+        color: #A7EFFF;
+        text-shadow: none;
+    }
+    .content-of-fixed{
+        width: 80%;
+    }
+    .header-fixed-div{
+        background: #7BC0DE;
+    }
+    .ul-in-fixed>li>a{
+        color: #fff;
+    }
+    .cont-of-first,.cont-of-wayResult,.cont-of-polilov,.cont-of-tree-d-service
+    ,.cont-of-car-div,.cont-of-contact{
+        width: 100%;
+    }
+    .big-pin-second-of-first {
+        font-size: 25px;
+    }
+    .cont-of-seond-in-first>div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cornerInner{
+        padding-left: 20px;
+    }
+    .second-p-in-corner,.third-p-in-corner{
+        padding: 0;
+        font-weight: bold;
+    }
+    .cornerInner{
+        border: 2px solid #000;
+        border-radius: 30px;
+    }
+    .first-p-in-inner{
+        font-size: 20px;
+    }
+    .item1>.resultDesc,.item1>.resultTop,.resultTop,
+    .resultBottomright,.item2>.resultDesc,
+    .item3>.resultDesc,.item4>.resultDesc,
+    .item5>.resultDesc
+    {
+        margin-left: 0;
+    }
+    .resultItem{
+        width: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    .resultBottom{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .result-big-div{
+        width: 100%;
+        margin: 0 auto;
+        height: 1107px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resultItem.item4{
+        top: 50px;
+        left: 0px;
+        width: 130px;
+        margin: 0 auto;
+    }
+    .resultItem.item5{
+        top: 50px;
+        left: 10px;
+    }
+    .big-title-third{
+        font-size: 23px;
+        margin-left: 3px;
+    }
+    .block-of-third{
+        justify-content: center;
+    }
+    .first-block-third{
+        padding: 0;
+        width: 100%;
+    }
+    .cont-third,.cont-of-result-of-company{
+        width: 90%;
+    }
+    .cont-of-marketing,.cont-of-contact{
+        width: 100%;
+    }
+    .method-item1,.method-item2,.method-item3,.method-item4{
+        top: 0;
+    }
+    .contact-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .resultItem.item3{
+        top: 50px;
+        left: 0px;
+        width: 150px;
+        margin: 0 auto;
+    }
+    .resultItem.item1 {
+        left: 4px;
+    }
+    .marketing-div-img{
+        background-position: 0 0;
+    }
+    .block-of-third{
+        flex-direction: column;
+    }
+    .first-block-third{
+        margin-bottom: 95px;
+    }
+    .big-title-of-marketing{
+        font-size: 20px;
+    }
+    .marketing-div-img>ul>li{
+        position: relative;
+        left: -2;
+    }
+    .method-item5,.method-item6{
+        top: 0;
+    }
+    .marketing-div-img>ul{
+        display: grid;
+        grid-template-columns: 156px 156px;
+        width: 313px;
+        margin: 0 auto;
+    }
+    .p-in-car-div-img{
+        display: block;
+    }
+    .href-div-car-img:hover:before{
+        width: 200px;
+    }
+    .href-div-in-car-img{
+        white-space: nowrap;
+    }
+    .p-in-car-div-img{
+        text-align: center;
+    }
+    .p-in-car-div-img {
+        padding: 53px 30px 80px 30px;
+        margin: 0px;
+    }
+    .img-div-team{
+        width: 90%;
+        margin-top: 50px;
+    }
+    .img-div-team>img{
+        width: 100%;
+    }
+    .cont-of-footer,.spans-our-contact{
+        width: 90%;
+    }
+    .tel-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .adress-href{
+        margin-left: 0px;
+    }
+    .tree-d-div{
+        width: 100%;
+    }
+    .first-p-and-three-d-big-div, .second-p-and-three-d-big-div, .third-p-and-three-d-big-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .p-before-tree-d-blocks{
+        width: auto;
+        margin-bottom: 30px;
+    }
+}
